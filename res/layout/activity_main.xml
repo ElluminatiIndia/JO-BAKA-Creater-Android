@@ -1,0 +1,186 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/ivRainbow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rainbow"
+        android:gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/box_border"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/clipView"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="1dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_jo"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_jo"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text"
+                    android:cursorVisible="false"
+                    android:gravity="center"
+                    android:hint="@string/text_name"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="@integer/max_length_name"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/font_size_jo"
+                    android:textStyle="bold" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/width_img"
+                    android:layout_height="@dimen/height_img" >
+
+                    <ImageView
+                        android:id="@+id/ivChoose"
+                        android:layout_width="@dimen/width_img"
+                        android:layout_height="@dimen/height_img"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/smiley" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/etSentance"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/edit_text"
+                    android:cursorVisible="false"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/text_sentence"
+                    android:inputType="textCapCharacters|textMultiLine"
+                    android:maxLength="36"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/font_size_et_jo"
+                    android:textStyle="bold" >
+
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/text_elluminti"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="10dp" >
+
+        <ImageButton
+            android:id="@+id/btnShare"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/button_share"
+            android:text="@string/text_share"
+            android:textSize="@dimen/font_size_share"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+
+            <ImageButton
+                android:id="@+id/btnFb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/button_facebook" />
+
+            <ImageButton
+                android:id="@+id/btnTwitter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/button_twitter" />
+
+            <ImageButton
+                android:id="@+id/btnGplus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/button_google" />
+
+            <ImageButton
+                android:id="@+id/btnEllu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/button_elluminati" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

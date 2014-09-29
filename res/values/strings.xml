@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Jo Baka</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="text_jo">JO&#160;</string>
+    <string name="text_name">name</string>
+    <string name="text_sentence">your sentence</string>
+    <string name="external_dir">GetSignature</string>
+    <string name="text_share">SHARE</string>
+    <string name="text_elluminti">www.elluminati.in</string>
+    <string name="text_revmob_id">542177e678f4ace94cc1978b</string>
+
+</resources>
